@@ -2,13 +2,7 @@ package com.example.springpetclinic.services;
 
 import com.example.springpetclinic.model.Pet;
 
-import java.util.Set;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long> {
 
-    public Pet findById(Long Id);
-
-    public Pet save(Pet owner);
-
-    public Set<Pet> findAll();
 }
